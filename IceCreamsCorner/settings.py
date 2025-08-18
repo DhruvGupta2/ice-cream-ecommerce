@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jvc1$!n8jqi=_(s0q(^-wq)(m(#l)s25cm+g_ebyt%vm+nx*-*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "ice-cream-ecommerce-jp6o.onrender.com",
