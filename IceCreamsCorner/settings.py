@@ -26,8 +26,15 @@ SECRET_KEY = 'django-insecure-jvc1$!n8jqi=_(s0q(^-wq)(m(#l)s25cm+g_ebyt%vm+nx*-*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ice-cream-ecommerce.onrender.com", "ice-cream-ecommerce-jp6o.onrender.com", "https://ice-cream-ecommerce-3.onrender.com", "https://ice-cream-ecommerce-4.onrender.com", "https://ice-cream-ecommerce-2.onrender.com", "localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = [
+    "ice-cream-ecommerce-jp6o.onrender.com",
+    "ice-cream-ecommerce.onrender.com",
+    "ice-cream-ecommerce-2.onrender.com",
+    "ice-cream-ecommerce-3.onrender.com",
+    "ice-cream-ecommerce-4.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
 
 # Application definition
 
