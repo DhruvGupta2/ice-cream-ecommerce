@@ -71,7 +71,7 @@ def reset_password_view(request):
                     return render(request, 'resetpassword.html')
                 else:
                     messages.success(request, "OTP is mailed successfully to your registered email id")
-                    return render(request, 'resetpassword.html', {"OTP_Status": 'generated', 'user_id': request.POST['userid']})
+                    return render(request, 'resetpassword.html', {"OTP_Status": 'generated', 'user_id': user.id})
             else:
                 messages.error(request, 'Email id is not registered')
                 return render(request, 'resetpassword.html')
@@ -95,7 +95,12 @@ def reset_password_view(request):
                 return render(request, 'resetpassword.html')
             else:
                 messages.error(request, 'New and Confirm password mismatched')
-                return render(request, 'resetpassword.html', {"OTP_Status": 'verified', "user_id":request.POST['userid']})
+                user = User.objects.get(email=request.POST['emailid'])
+
+                return render(request, 'resetpassword.html', {
+                    "OTP_Status": 'generated',
+                    "user_id": user.id   
+                })
     else:
         return render(request, 'resetpassword.html')
 
