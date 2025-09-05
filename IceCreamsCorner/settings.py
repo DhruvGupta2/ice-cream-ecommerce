@@ -17,6 +17,10 @@ DEBUG ='True'
 # Set allowed hosts for Render deployment
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://ice-cream-ecommerce-hyim.onrender.com",
+]
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
