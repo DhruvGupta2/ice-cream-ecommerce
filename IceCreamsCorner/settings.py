@@ -18,7 +18,7 @@ DEBUG ='True'
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://ice-cream-ecommerce-hyim.onrender.com",
+    "https://ice-cream-ecommerce-hyim.onrender.com","https://ice-cream-ecommerce-1.onrender.com"
 ]
 
 # Application definition
