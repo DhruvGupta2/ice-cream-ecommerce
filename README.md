@@ -2,9 +2,12 @@
 
 Welcome to IceCreamsCorner, a Django-based web application for managing an online ice cream shop. This project is created using HTML, CSS, JavaScript, Bootstrap, and Django. It's part of my journey in learning web development, showcasing various features and functionalities.
 
+<<<<<<< HEAD
 
 - **Live Demo:** [Live Website](https://ice-cream-ecommerce-1.onrender.com/)
 
+=======
+>>>>>>> 7c63ff39da6554183b8d6eee186cb45554d2f5e0
 ## Features
 
 - **User Authentication:**
